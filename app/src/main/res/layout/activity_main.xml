@@ -9,20 +9,37 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/parser"
-        android:textAllCaps="false"
-        android:text="Parser"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:id="@+id/timecode"
-        android:layout_below="@+id/parser"
         android:text="TimeCode"/>
 
 
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="clickToSaveSheet"
+            android:text="Parse Sheet" />
 
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button0"
+            android:layout_marginTop="20dp"
+            android:onClick="clickToSaveQuestions"
+            android:text="Parse Questions" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="clickToCheckSheet"
+            android:text="Check Sheet" />
 </RelativeLayout>
